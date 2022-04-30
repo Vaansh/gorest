@@ -1,6 +1,20 @@
-# GoRest
+<h1> GoRest </h1>
 
 A simple RESTful API with Go and Gin.
+
+---
+
+<b> Table of Contents </b>
+
+- [Usage](#usage)
+  - [Installation](#installation)
+  - [Run](#run)
+  - [Requests](#requests)
+- [Output](#output)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+---
 
 ## Usage
 
@@ -12,7 +26,9 @@ git clone https://github.com/Vaansh/gorest.git
 
 ### Run
 
-`go run .`
+```sh
+go run .
+```
 
 ### Requests
 
@@ -33,25 +49,31 @@ curl http://localhost:8080/items \
 ```
 
 ```sh
-curl http://localhost:8080/item/4 \
+curl http://localhost:8080/items/4 \
     --header "Content-Type: application/json" \
     --request "GET"
 ```
 
 ```sh
-curl http://localhost:8080/item/5 \
+curl http://localhost:8080/items/5 \
     --header "Content-Type: application/json" \
     --request "GET"
 ```
+
+---
 
 ## Output
 
 ![Output](https://github.com/Vaansh/gorest/blob/main/docs/resource/server.png)
 
+---
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+---
+
 ## Acknowledgements
 
-See [acknowledgements](https://github.com/Vaansh/gorest/blob/main/docs/acknowledgements.md).
+- See [acknowledgements](https://github.com/Vaansh/gorest/blob/main/docs/acknowledgements.md).
