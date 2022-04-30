@@ -1,14 +1,21 @@
-name: Golang Formatter
-on: [push]
+name: Go Format Action
+
+on:
+  push:
+    branches: [main]
+
 jobs:
-  build:
-    name: Golang Formatter
+  prettier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
+          ref: ${{ github.head_ref }}
           fetch-depth: 0
-      - name: Golang Formatter
-        uses: sladyn98/auto-go-format@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Format code
+        uses: Jerome1337/gofmt-action@v1.0.4
+        with:
+          gofmt-path: "./src"
+          gofmt-flags: "-l -d"

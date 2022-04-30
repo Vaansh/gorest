@@ -1,1 +1,5 @@
-package gorest
+package main
+
+func main() {
+
+}
