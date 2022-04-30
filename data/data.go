@@ -15,12 +15,8 @@ func GenerateID() string {
 	return id.String()
 }
 
-var items = []item{
+var Items = []item{
 	{ID: GenerateID(), Name: "Item1", Price: 14.99},
 	{ID: GenerateID(), Name: "Item2", Price: 24.00},
 	{ID: GenerateID(), Name: "Item3", Price: 5.49},
-}
-
-func GetItemsRaw() []item {
-	return items
 }
