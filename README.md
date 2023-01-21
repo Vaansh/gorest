@@ -2,8 +2,6 @@
 
 A simple RESTful API with Go and Gin.
 
----
-
 <b> Table of Contents </b>
 
 - [Usage](#usage)
@@ -12,9 +10,6 @@ A simple RESTful API with Go and Gin.
   - [Requests](#requests)
 - [Output](#output)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
-
----
 
 ## Usage
 
@@ -60,20 +55,10 @@ curl http://localhost:8080/items/5 \
     --request "GET"
 ```
 
----
-
 ## Output
 
 ![Output](https://github.com/Vaansh/gorest/blob/main/docs/resource/server.png)
 
----
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-## Acknowledgements
-
-- See [acknowledgements](https://github.com/Vaansh/gorest/blob/main/docs/acknowledgements.md).
